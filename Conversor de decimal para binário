@@ -1,0 +1,15 @@
+num = int(input("Digite um número inteiro na base 10: "))
+num_bin=""
+num2=num
+if num==0:
+  num_bin="0"
+else:
+  while num2>=1:
+    resto=num2%2
+    num_bin+=str(resto)
+    num2=num2//2
+
+
+
+num_binR=num_bin[::-1]
+print("O número", num, "em base 2 é:", num_binR)
